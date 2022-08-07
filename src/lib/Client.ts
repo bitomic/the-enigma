@@ -15,7 +15,7 @@ export class UserClient extends SapphireClient {
 			],
 			loadDefaultErrorListeners: true,
 			logger: {
-				level: LogLevel.Debug
+				level: LogLevel.Info
 			}
 		} )
 		container.sequelize = sequelize
