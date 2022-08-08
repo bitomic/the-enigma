@@ -7,7 +7,8 @@ import { env } from '../../lib'
 @ApplyOptions<CommandOptions>( {
 	description: 'Update the commands\'s ids in the database.',
 	enabled: true,
-	name: 'commands-data'
+	name: 'commands-data',
+	preconditions: [ 'OwnerOnly' ]
 } )
 export class UserCommand extends Command {
 	public override async registerApplicationCommands( registry: ApplicationCommandRegistry ): Promise<void> {

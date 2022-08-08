@@ -7,7 +7,8 @@ import { env } from '../../lib'
 @ApplyOptions<CommandOptions>( {
 	description: 'Reload all application commands.',
 	enabled: true,
-	name: 'reload-commands'
+	name: 'reload-commands',
+	preconditions: [ 'OwnerOnly' ]
 } )
 export class UserCommand extends Command {
 	public override async registerApplicationCommands( registry: ApplicationCommandRegistry ): Promise<void> {
