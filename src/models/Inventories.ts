@@ -54,25 +54,29 @@ export class InventoryModel extends Model<IInventoryInterface> {
 		const { guild, snowflake } = player
 		const playerItem = await this.container.stores.get( 'models' ).get( 'Players' )
 			.getPlayer( guild, snowflake )
-		return this.model.increment(
-			{ amount: 1 },
-			{ where: { itemId, playerId: playerItem.id } }
-		)
+		let instance = await this.model.findOne( { where: { itemId, playerId: playerItem.id } } )
+		if ( instance ) {
+			instance.amount++
+		} else {
+			instance = this.model.build( { itemId, playerId: playerItem.id } )
+		}
+		return instance.save()
 	}
 
 	public async removeItem( player: { guild: string, snowflake: string }, itemId: number ): Promise<IInventoryInterface | null> {
 		const { guild, snowflake } = player
 		const playerItem = await this.container.stores.get( 'models' ).get( 'Players' )
 			.getPlayer( guild, snowflake )
-		const instance = await this.model.decrement(
-			{ amount: 1 },
-			{ where: { itemId, playerId: playerItem.id } }
-		)
+		const instance = await this.model.findOne( { where: { itemId, playerId: playerItem.id } } )
+		if ( !instance ) return null
+
+		instance.amount--
 		if ( instance.amount <= 0 ) {
 			await instance.destroy()
 			return null
+		} else {
+			return instance.save()
 		}
-		return instance
 	}
 }
 

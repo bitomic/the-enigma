@@ -27,6 +27,7 @@ export class PlayerModel extends Model<IPlayerInterface> {
 				guild: DataTypes.STRING,
 				id: {
 					allowNull: false,
+					autoIncrement: true,
 					primaryKey: true,
 					type: DataTypes.INTEGER
 				},
