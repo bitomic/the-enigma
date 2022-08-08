@@ -39,6 +39,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@bitomic/material-colors@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@bitomic/material-colors@npm:1.0.0"
+  checksum: bda3034ec5f4877f30bc04267e4a756675bd4e0e254c0c6dbb424c269bf4f5324bac8aeccc92abaab44d890b02aeeffcbf5bfd2f50ee4a0603fba0998ea2b793
+  languageName: node
+  linkType: hard
+
 "@commitlint/cli@npm:^17.0.3":
   version: 17.0.3
   resolution: "@commitlint/cli@npm:17.0.3"
@@ -3451,6 +3458,7 @@ __metadata:
   resolution: "sapphire-template@workspace:."
   dependencies:
     "@bitomic/eslint-config": ^1.0.0
+    "@bitomic/material-colors": ^1.0.0
     "@commitlint/cli": ^17.0.3
     "@commitlint/config-conventional": ^17.0.3
     "@discordjs/rest": ^1.0.1

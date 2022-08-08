@@ -13,6 +13,7 @@
     "start": "yarn node --enable-source-maps dist/main.js"
   },
   "dependencies": {
+    "@bitomic/material-colors": "^1.0.0",
     "@discordjs/rest": "^1.0.1",
     "@sapphire/decorators": "^4.3.8",
     "@sapphire/framework": "3.0.0-next.c6c1eee.0",
