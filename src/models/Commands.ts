@@ -21,11 +21,11 @@ export class CommandModel extends Model<ICommandInterface> {
 	public constructor( context: PieceContext, options: PieceOptions ) {
 		super( context, {
 			...options,
-			name: 'commands'
+			name: 'Commands'
 		} )
 
 		this.model = this.container.sequelize.define<ICommandInterface>(
-			'Command',
+			'Commands',
 			{
 				entryType: DataTypes.STRING,
 				name: DataTypes.STRING,
@@ -89,6 +89,6 @@ export class CommandModel extends Model<ICommandInterface> {
 
 declare global {
 	interface ModelRegistryEntries {
-		commands: CommandModel
+		Commands: CommandModel
 	}
 }

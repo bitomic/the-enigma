@@ -18,7 +18,7 @@ export class KeyVModel extends Model<IKeyVInterface> {
 	public constructor( context: PieceContext, options: PieceOptions ) {
 		super( context, {
 			...options,
-			name: 'keyv'
+			name: 'KeyV'
 		} )
 
 		this.model = this.container.sequelize.define<IKeyVInterface>(
@@ -57,6 +57,6 @@ export class KeyVModel extends Model<IKeyVInterface> {
 
 declare global {
 	interface ModelRegistryEntries {
-		keyv: KeyVModel
+		KeyV: KeyVModel
 	}
 }

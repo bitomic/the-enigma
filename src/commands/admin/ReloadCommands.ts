@@ -17,7 +17,7 @@ export class UserCommand extends Command {
 				.setName( this.name )
 				.setDescription( this.description ),
 			{
-				...await this.container.stores.get( 'models' ).get( 'commands' )
+				...await this.container.stores.get( 'models' ).get( 'Commands' )
 					.getData( this.name ),
 				guildIds: [ env.DISCORD_DEVELOPMENT_SERVER ]
 			}
@@ -27,7 +27,7 @@ export class UserCommand extends Command {
 	public override async chatInputRun( interaction: CommandInteraction ): Promise<void> {
 		const t1 = Date.now()
 		await interaction.reply( ':hourglass_flowing_sand: Removing commands. This may take a while...' )
-		await this.container.stores.get( 'models' ).get( 'commands' )
+		await this.container.stores.get( 'models' ).get( 'Commands' )
 			.truncate()
 
 		await this.container.client.application?.commands.set( [] )
