@@ -6,5 +6,6 @@ export abstract class Model<T extends SequelizeModel> extends AliasPiece {
 
 	public override async onLoad(): Promise<void> {
 		await this.model.sync()
+			.catch( () => this.container.logger.warn( `Failed to sync model: ${ this.name }` ) )
 	}
 }
