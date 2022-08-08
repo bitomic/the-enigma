@@ -63,7 +63,7 @@ export class UserCommand extends Command {
 		}
 
 		const items = this.container.stores.get( 'models' ).get( 'Items' )
-		await items.model.truncate()
+		// await items.model.truncate()
 		const success = await items.model.bulkCreate( data )
 			.then( () => true )
 			.catch( () => false )
