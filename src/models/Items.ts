@@ -44,6 +44,13 @@ export class ItemModel extends Model<IItemInterface> {
 	public getItemById( id: number ): Promise<IItemInterface | null> {
 		return this.model.findOne( { where: { id } } )
 	}
+
+	public getRandomItem(): Promise<IItemInterface | null> {
+		return this.model.findOne( {
+			limit: 1,
+			order: this.container.sequelize.random()
+		} )
+	}
 }
 
 declare global {
