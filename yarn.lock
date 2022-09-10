@@ -590,13 +590,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sapphire/plugin-scheduled-tasks@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "@sapphire/plugin-scheduled-tasks@npm:3.0.0"
+"@sapphire/plugin-scheduled-tasks@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "@sapphire/plugin-scheduled-tasks@npm:4.0.0"
   dependencies:
-    "@sapphire/time-utilities": ^1.7.5
+    "@sapphire/time-utilities": ^1.7.6
     tslib: ^2.4.0
-  checksum: ed56627655be34dbae873b2f08aec6b6f45b092125369a1e4447f07b825c9e96f085b2c493079433b2c96dd2be40df11215de25ed4019eb382d4a51fef2e3dcd
+  checksum: addb8856842ec024c5d8bb3889c99f350aa26dc0fe3ad5ff6076c3fa36cffd1d37127b5432c885e85fe181540fd2e7e2f1172c63e4a70a567c36e261a9a42eb6
   languageName: node
   linkType: hard
 
@@ -676,12 +676,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sapphire/time-utilities@npm:^1.7.5":
-  version: 1.7.5
-  resolution: "@sapphire/time-utilities@npm:1.7.5"
+"@sapphire/time-utilities@npm:^1.7.6":
+  version: 1.7.6
+  resolution: "@sapphire/time-utilities@npm:1.7.6"
   dependencies:
-    "@sapphire/utilities": ^3.7.0
-  checksum: a83f505ff0e5eac7b8b316c7fa207f52ae2c07dd223f651d7dcb3f9a3e61b86b6168dac746455d1d1a2a4732d4865ab7526332f3f463db31048d8b1e5ba9d6cb
+    "@sapphire/utilities": ^3.9.2
+  checksum: eadcdf2cbadcc15fa36d7d3b4719acb05f30ed0611f3f8bcfd47d8037221239168f190e79b2c05942cc66a66cbbf3c7d313eda15e9a2a3cff81cf25cec42f3ce
   languageName: node
   linkType: hard
 
@@ -710,6 +710,13 @@ __metadata:
   version: 3.8.0
   resolution: "@sapphire/utilities@npm:3.8.0"
   checksum: 5b7520bcce6abf743bdf393783bed7b003e2fe6e6473a8325c00ee1df8c7eb6325ec0a307435345627b609146ca0555e5169545af41c7b3a71dcf6f7b87339f3
+  languageName: node
+  linkType: hard
+
+"@sapphire/utilities@npm:^3.9.2":
+  version: 3.9.3
+  resolution: "@sapphire/utilities@npm:3.9.3"
+  checksum: 9f3f977fd5c0677d5f79136e9cb68ade3317cfba3e87bb58689f4af68233a807af34eb6092ad262c946d5eaf5c4a76cd534b0b395ebbaf0f0912dd80e174f912
   languageName: node
   linkType: hard
 
@@ -4177,7 +4184,7 @@ __metadata:
     "@sapphire/decorators": ^4.3.8
     "@sapphire/framework": 3.0.0-next.c6c1eee.0
     "@sapphire/pieces": ^3.3.4
-    "@sapphire/plugin-scheduled-tasks": ^3.0.0
+    "@sapphire/plugin-scheduled-tasks": ^4.0.0
     "@sapphire/stopwatch": ^1.4.1
     "@sapphire/utilities": ^3.8.0
     "@types/ioredis": ^4.28.10
