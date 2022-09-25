@@ -832,10 +832,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^16.11.51":
-  version: 16.11.51
-  resolution: "@types/node@npm:16.11.51"
-  checksum: b4193d3f9d4240d866db0ca50de4a8c3b68fd81754d0a572712b559497d0f34931e4246ce0b2692afc8f8def9fcc69fd176bd7176af896d07eefa6d78d886425
+"@types/node@npm:^16.11.60":
+  version: 16.11.60
+  resolution: "@types/node@npm:16.11.60"
+  checksum: 8c9670801f736a06f5ec8dd4ade00cb8d822f1dd168ad255909af6f6439a50abc231fa684418810002fdcd4c282804f56ceee6e7d3cd3209736c4fad115f4b2c
   languageName: node
   linkType: hard
 
@@ -4171,7 +4171,7 @@ __metadata:
     "@sapphire/stopwatch": ^1.4.1
     "@sapphire/utilities": ^3.8.0
     "@types/ioredis": ^4.28.10
-    "@types/node": ^16.11.51
+    "@types/node": ^16.11.60
     "@typescript-eslint/eslint-plugin": ^5.33.1
     "@typescript-eslint/parser": ^5.33.1
     bullmq: ^1.89.1
