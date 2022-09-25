@@ -36,8 +36,8 @@
   },
   "devDependencies": {
     "@bitomic/eslint-config": "^1.0.0",
-    "@commitlint/cli": "^17.0.3",
-    "@commitlint/config-conventional": "^17.0.3",
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
     "@types/ioredis": "^4.28.10",
     "@types/node": "^16.11.60",
     "@typescript-eslint/eslint-plugin": "^5.33.1",
