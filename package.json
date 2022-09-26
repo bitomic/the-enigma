@@ -15,10 +15,10 @@
   "dependencies": {
     "@bitomic/material-colors": "^1.0.0",
     "@discordjs/rest": "^1.2.0",
-    "@sapphire/decorators": "^4.3.8",
+    "@sapphire/decorators": "^5.0.0",
     "@sapphire/framework": "3.0.0-next.c6c1eee.0",
     "@sapphire/pieces": "^3.3.4",
-    "@sapphire/plugin-scheduled-tasks": "^3.0.0",
+    "@sapphire/plugin-scheduled-tasks": "^5.0.0",
     "@sapphire/stopwatch": "^1.4.1",
     "@sapphire/utilities": "^3.8.0",
     "bullmq": "^1.91.1",
