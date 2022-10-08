@@ -300,25 +300,33 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@discordjs/collection@npm:^1.1.0":
-  version: 1.1.0
-  resolution: "@discordjs/collection@npm:1.1.0"
-  checksum: 9a78763a181130d91b51d0d93553fd75d09d0aabd6556890a35404bbefe9c5112cb74c3b1e486a213607f6577f9d2d8ee94ee3177652116bac80516e7d3083d6
+"@discordjs/collection@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "@discordjs/collection@npm:1.2.0"
+  checksum: 76eae566834d78437363a3437d10c74b485b0a8b0dd350745e7bbb45d0bdc834b8ce6c1008c41728f7cbdf9be80a3147e8006610ed8d34bec8b31b7c521d40c2
   languageName: node
   linkType: hard
 
-"@discordjs/rest@npm:^1.2.0":
-  version: 1.2.0
-  resolution: "@discordjs/rest@npm:1.2.0"
+"@discordjs/rest@npm:^1.3.0":
+  version: 1.3.0
+  resolution: "@discordjs/rest@npm:1.3.0"
   dependencies:
-    "@discordjs/collection": ^1.1.0
+    "@discordjs/collection": ^1.2.0
+    "@discordjs/util": ^0.1.0
     "@sapphire/async-queue": ^1.5.0
     "@sapphire/snowflake": ^3.2.2
-    discord-api-types: ^0.37.10
+    discord-api-types: ^0.37.12
     file-type: ^18.0.0
     tslib: ^2.4.0
-    undici: ^5.10.0
-  checksum: fa414f2a92e94ad587c0a793e5a378cc0597ed062fe1509314b7c29f925b7a9cc013efad8f572f589d520a9dca4f19a4cc2403f14b89d38e6c61aa2292d96cfe
+    undici: ^5.11.0
+  checksum: 703c815e9f231b56cad0e71ed805420d875f1a9522e0c4d7be291a2dab5fdf65933b3f592bd3112fe665e213d7c97e32a2e94504a9133de09ccdd327aa53636a
+  languageName: node
+  linkType: hard
+
+"@discordjs/util@npm:^0.1.0":
+  version: 0.1.0
+  resolution: "@discordjs/util@npm:0.1.0"
+  checksum: 880e15cd761437a21cf17b8a9dab50e7e5418fcc77dc34037c31a52b871fab1b958218ab6218aafd20af8b7a4e658a705d3f257268324773a285d9a06368c1b9
   languageName: node
   linkType: hard
 
@@ -1760,10 +1768,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"discord-api-types@npm:^0.37.10":
-  version: 0.37.10
-  resolution: "discord-api-types@npm:0.37.10"
-  checksum: a09460953a02adf3c40a486e3946c6ca0dd6c76d279444a4595abecfe8b5b88ad49d48b5eeb85e2cb95256a0824ee075cb7550d371c13e64e37ec703206c092b
+"discord-api-types@npm:^0.37.12":
+  version: 0.37.12
+  resolution: "discord-api-types@npm:0.37.12"
+  checksum: 0dd6bd5ad9e80708e020904fd3fc0e538df89549ea398559e51fdb562428aaddd07b3b218c7aac574c18153fe5e3bed45860ba6af6c8ccc5f4e408ffc25e3d58
   languageName: node
   linkType: hard
 
@@ -4181,7 +4189,7 @@ __metadata:
     "@bitomic/material-colors": ^1.0.0
     "@commitlint/cli": ^17.1.2
     "@commitlint/config-conventional": ^17.1.0
-    "@discordjs/rest": ^1.2.0
+    "@discordjs/rest": ^1.3.0
     "@sapphire/decorators": ^5.0.0
     "@sapphire/framework": 3.0.0-next.c6c1eee.0
     "@sapphire/pieces": ^3.3.4
@@ -4931,13 +4939,6 @@ __metadata:
     tsc: bin/tsc
     tsserver: bin/tsserver
   checksum: 301459fc3eb3b1a38fe91bf96d98eb55da88a9cb17b4ef80b4d105d620f4d547ba776cc27b44cc2ef58b66eda23fe0a74142feb5e79a6fb99f54fc018a696afa
-  languageName: node
-  linkType: hard
-
-"undici@npm:^5.10.0":
-  version: 5.10.0
-  resolution: "undici@npm:5.10.0"
-  checksum: 7ba2b71dccc74cd2bdf645b83e9aaef374ae04855943d0a2f42a3d0b9e5556f37cc9b5156fb5288277a2fa95fd46a56f3ae0d5cf73db3f008d75ec41104b136c
   languageName: node
   linkType: hard
 
